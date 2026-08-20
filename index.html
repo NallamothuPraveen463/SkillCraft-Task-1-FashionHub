@@ -1,0 +1,937 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="FashionHub - Online Fashion Shopping">
+
+    <title>FashionHub | Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-container">
+
+            <!-- LOGO -->
+
+            <a href="#home" class="logo">
+                Fashion<span>Hub</span>
+            </a>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="nav-menu" id="navMenu">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#categories" class="nav-link">
+                    Men
+                </a>
+
+                <a href="#categories" class="nav-link">
+                    Women
+                </a>
+
+                <a href="#categories" class="nav-link">
+                    Kids
+                </a>
+
+                <a href="#products" class="nav-link">
+                    Beauty
+                </a>
+
+                <a href="#contact" class="nav-link">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- NAV ACTIONS -->
+
+            <div class="nav-actions">
+
+                <!-- SEARCH -->
+
+                <div class="search-box">
+
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search products..."
+                    >
+
+                </div>
+
+
+                <!-- PROFILE -->
+
+                <button class="nav-action">
+                    ♙
+                    <span>Profile</span>
+                </button>
+
+
+                <!-- WISHLIST -->
+
+                <button
+                    class="nav-action"
+                    id="wishlistButton">
+
+                    ♡
+                    <span>Wishlist</span>
+
+                </button>
+
+
+                <!-- CART -->
+
+                <button
+                    class="nav-action cart-button"
+                    id="cartButton">
+
+                    🛒
+                    <span>Bag</span>
+
+                    <span
+                        class="cart-count"
+                        id="cartCount">
+                        0
+                    </span>
+
+                </button>
+
+            </div>
+
+
+            <!-- MOBILE MENU -->
+
+            <button
+                class="mobile-menu-btn"
+                id="mobileMenuBtn">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="hero-small">
+                    NEW SEASON COLLECTION
+                </p>
+
+                <h1>
+                    BIG FASHION
+                    <span>SALE</span>
+                </h1>
+
+                <p class="hero-description">
+
+                    Upgrade your wardrobe with
+                    the latest fashion collections.
+
+                    <br>
+
+                    Flat <strong>70% OFF</strong> on
+                    selected products.
+
+                </p>
+
+                <a
+                    href="#products"
+                    class="hero-button">
+
+                    Shop Now
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section
+            class="categories-section"
+            id="categories">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    EXPLORE COLLECTIONS
+                </p>
+
+                <h2>
+                    Shop By Category
+                </h2>
+
+                <p>
+                    Discover fashion for every style
+                    and every occasion.
+                </p>
+
+            </div>
+
+
+            <div class="category-grid">
+
+                <!-- MEN -->
+
+                <a
+                    href="#products"
+                    class="category-card">
+
+                    <div class="category-image">
+
+                        <img
+                            src="images/product1.jpg"
+                            alt="Men Fashion">
+
+                    </div>
+
+                    <div class="category-content">
+
+                        <h3>Men</h3>
+
+                        <span>
+                            Explore Collection →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- WOMEN -->
+
+                <a
+                    href="#products"
+                    class="category-card">
+
+                    <div class="category-image">
+
+                        <img
+                            src="images/product2.jpg"
+                            alt="Women Fashion">
+
+                    </div>
+
+                    <div class="category-content">
+
+                        <h3>Women</h3>
+
+                        <span>
+                            Explore Collection →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- KIDS -->
+
+                <a
+                    href="#products"
+                    class="category-card">
+
+                    <div class="category-image">
+
+                        <img
+                            src="images/product3.jpg"
+                            alt="Kids Fashion">
+
+                    </div>
+
+                    <div class="category-content">
+
+                        <h3>Kids</h3>
+
+                        <span>
+                            Explore Collection →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <!-- BEAUTY -->
+
+                <a
+                    href="#products"
+                    class="category-card">
+
+                    <div class="category-image">
+
+                        <img
+                            src="images/product4.jpg"
+                            alt="Beauty Products">
+
+                    </div>
+
+                    <div class="category-content">
+
+                        <h3>Beauty</h3>
+
+                        <span>
+                            Explore Collection →
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section
+            class="products-section"
+            id="products">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    TRENDING NOW
+                </p>
+
+                <h2>
+                    Trending Products
+                </h2>
+
+                <p>
+                    Our most loved products
+                    this season.
+                </p>
+
+            </div>
+
+
+            <div
+                class="product-grid"
+                id="productGrid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <article
+                    class="product-card"
+                    data-name="Men Hoodie"
+                    data-price="999">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            40% OFF
+                        </span>
+
+                        <button
+                            class="wishlist-product">
+
+                            ♡
+
+                        </button>
+
+                        <img
+                            src="images/product1.jpg"
+                            alt="Men Hoodie">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-brand">
+                            FASHIONHUB
+                        </p>
+
+                        <h3>
+                            Men Hoodie
+                        </h3>
+
+                        <p class="product-description">
+                            Premium cotton casual hoodie
+                            for everyday comfort.
+                        </p>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(124)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹999
+                            </span>
+
+                            <span class="old-price">
+                                ₹1,699
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Men Hoodie"
+                            data-price="999"
+                            data-image="images/product1.jpg">
+
+                            Add To Cart
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PRODUCT 2 -->
+
+                <article
+                    class="product-card"
+                    data-name="Women Dress"
+                    data-price="1499">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            35% OFF
+                        </span>
+
+                        <button
+                            class="wishlist-product">
+
+                            ♡
+
+                        </button>
+
+                        <img
+                            src="images/product2.jpg"
+                            alt="Women Dress">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-brand">
+                            FASHIONHUB
+                        </p>
+
+                        <h3>
+                            Women Dress
+                        </h3>
+
+                        <p class="product-description">
+                            Elegant premium dress
+                            for special occasions.
+                        </p>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(98)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹1499
+                            </span>
+
+                            <span class="old-price">
+                                ₹2,299
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Women Dress"
+                            data-price="1499"
+                            data-image="images/product2.jpg">
+
+                            Add To Cart
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PRODUCT 3 -->
+
+                <article
+                    class="product-card"
+                    data-name="Sports Shoes"
+                    data-price="2199">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            30% OFF
+                        </span>
+
+                        <button
+                            class="wishlist-product">
+
+                            ♡
+
+                        </button>
+
+                        <img
+                            src="images/product3.jpg"
+                            alt="Sports Shoes">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-brand">
+                            FASHIONHUB
+                        </p>
+
+                        <h3>
+                            Sports Shoes
+                        </h3>
+
+                        <p class="product-description">
+                            Lightweight running shoes
+                            for active lifestyles.
+                        </p>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(210)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹2199
+                            </span>
+
+                            <span class="old-price">
+                                ₹3,199
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Sports Shoes"
+                            data-price="2199"
+                            data-image="images/product3.jpg">
+
+                            Add To Cart
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- PRODUCT 4 -->
+
+                <article
+                    class="product-card"
+                    data-name="Smart Watch"
+                    data-price="3499">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            25% OFF
+                        </span>
+
+                        <button
+                            class="wishlist-product">
+
+                            ♡
+
+                        </button>
+
+                        <img
+                            src="images/product4.jpg"
+                            alt="Smart Watch">
+
+                    </div>
+
+
+                    <div class="product-info">
+
+                        <p class="product-brand">
+                            FASHIONHUB
+                        </p>
+
+                        <h3>
+                            Smart Watch
+                        </h3>
+
+                        <p class="product-description">
+                            Smart fitness watch with
+                            modern features.
+                        </p>
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>(176)</span>
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹3499
+                            </span>
+
+                            <span class="old-price">
+                                ₹4,699
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="add-cart"
+                            data-name="Smart Watch"
+                            data-price="3499"
+                            data-image="images/product4.jpg">
+
+                            Add To Cart
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROMO ================= -->
+
+        <section class="promo-section">
+
+            <div class="promo-content">
+
+                <p>
+                    LIMITED TIME OFFER
+                </p>
+
+                <h2>
+                    Get Up To
+                    <span>70% OFF</span>
+                </h2>
+
+                <p>
+                    On selected fashion collections.
+                </p>
+
+                <a
+                    href="#products"
+                    class="promo-button">
+
+                    Shop Collection
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section
+            class="contact-section"
+            id="contact">
+
+            <div class="section-heading">
+
+                <p class="section-label">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Contact Us
+                </h2>
+
+                <p>
+                    Have questions?
+                    We'd love to hear from you.
+                </p>
+
+            </div>
+
+
+            <form
+                class="contact-form"
+                id="contactForm">
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required>
+
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required>
+
+                </div>
+
+
+                <textarea
+                    rows="5"
+                    placeholder="Write your message..."
+                    required>
+                </textarea>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= CART SIDEBAR ================= -->
+
+    <aside
+        class="cart-sidebar"
+        id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>
+                Your Bag
+            </h2>
+
+            <button
+                id="closeCart">
+
+                ×
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="cart-items"
+            id="cartItems">
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn">
+
+                Proceed To Checkout
+
+            </button>
+
+            <button
+                class="clear-cart"
+                id="clearCart">
+
+                Clear Bag
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CART OVERLAY -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay">
+    </div>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h2>
+                    Fashion<span>Hub</span>
+                </h2>
+
+                <p>
+                    Your destination for modern
+                    fashion and lifestyle.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#categories">
+                    Categories
+                </a>
+
+                <a href="#products">
+                    Products
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Customer Service
+                </h3>
+
+                <a href="#">
+                    Help Center
+                </a>
+
+                <a href="#">
+                    Shipping
+                </a>
+
+                <a href="#">
+                    Returns
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+                <div class="social-links">
+
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">LinkedIn</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 FashionHub.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Built for SkillCraft Technology Internship
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
